@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/fondo_seccion"
+              android:id="@+id/llRespuestaNoResultados"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_button_item">
+
+        <ImageView
+                android:id="@+id/item_adap_unid_prod_imgFichaDisenio"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_search" />
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/txtNoResultados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="@color/text_color_primary"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="No se econtraron resultados para"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@string/font_family_light"
+            android:textStyle="normal"
+            android:textColor="@color/text_color_secondary"
+            android:gravity="center_horizontal"
+            android:text="Asegúrate de escribir correctamente el número de suministro."
+    />
+
+</LinearLayout>

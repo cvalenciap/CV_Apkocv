@@ -1,0 +1,137 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration.getAt("androidCompileSdkVersion")
+    buildToolsVersion globalConfiguration.getAt("androidBuildToolsVersion")
+    flavorDimensions "mode"
+
+
+    defaultConfig {
+        minSdkVersion globalConfiguration.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfiguration.getAt("androidTargetSdkVersion")
+        multiDexEnabled true
+        applicationId globalConfiguration.getAt("androidApplicationId")
+        versionCode globalConfiguration.getAt("androidVersionCode")
+        versionName globalConfiguration.getAt("androidVersionName")
+        testInstrumentationRunner globalConfiguration.getAt("testInstrumentationRunner")
+        testApplicationId globalConfiguration.getAt("androidTestApplicationId")
+        vectorDrawables.useSupportLibrary = globalConfiguration.getAt("useSupportLibrary")
+        versionCode 4
+        versionName "1.3"
+    }
+
+
+//signingConfigs {
+    //release {
+    //    storeFile file('../buildsystem/sedapal.jks')
+    //    storePassword 'BAnC0D3L4NAC10n2017'
+    //    keyAlias 'Sedapal.pe'
+    //    keyPassword 'P4g4l0.p32017'
+    //}
+    //debug {
+    //    storeFile file('../buildsystem/debug.keystore')
+    //    storePassword 'android'
+    //    keyAlias 'androiddebugkey'
+    //    keyPassword 'android'
+    //}
+    //}
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        disable 'InvalidPackage'            //Some libraries have issues with this.
+        disable 'OldTargetApi'
+        //Lint gives this warning but SDK 20 would be Android L Beta.
+        disable 'IconDensities'             //For testing purpose. This is safe to remove.
+        disable 'IconMissingDensityFolder'  //For testing purpose. This is safe to remove.
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+}
+
+
+dependencies {
+    def presentationDependencies = rootProject.ext.presentationDependencies
+    def presentationTestDependencies = rootProject.ext.presentationTestDependencies
+
+    implementation project(':domain')
+    implementation project(':data')
+    implementation presentationDependencies.autofittextview
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    annotationProcessor presentationDependencies.daggerCompiler
+    implementation presentationDependencies.dagger
+    implementation presentationDependencies.appCompat
+    implementation presentationDependencies.design
+    implementation presentationDependencies.cardView
+    implementation presentationDependencies.butterKnife
+    annotationProcessor presentationDependencies.butterKnifeCompiler
+    implementation presentationDependencies.recyclerView
+    implementation presentationDependencies.glide
+    implementation presentationDependencies.rxJava
+    implementation presentationDependencies.rxAndroid
+    compileOnly presentationDependencies.javaxAnnotation
+    implementation presentationDependencies.mpAndroidChart
+
+    implementation presentationDependencies.playServicesPlaces
+    implementation presentationDependencies.playServicesLocation
+    implementation presentationDependencies.playServicesMaps
+
+    androidTestImplementation presentationTestDependencies.mockito
+    androidTestImplementation presentationTestDependencies.dexmaker
+    androidTestImplementation presentationTestDependencies.dexmakerMockito
+    androidTestImplementation presentationTestDependencies.espresso
+    androidTestImplementation presentationTestDependencies.testingSupportLib
+
+    //Pay with visa
+    implementation(name: 'TrustDefender-5.0-96', ext: 'aar')
+    implementation(name: 'visanet-lib-release', ext: 'aar')
+
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'io.card:android-sdk:5.5.0'
+    implementation 'com.eyalbira.loadingdots:loading-dots:1.0.2'
+    implementation 'com.amitshekhar.android:android-networking:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //Tour guide in first activity
+    implementation ('com.github.worker8:tourguide:1.0.19-SNAPSHOT@aar') {
+        transitive=true
+    }
+
+}
+repositories {
+    google()
+    maven {
+        url 'https://jitpack.io'
+    }
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+
+}

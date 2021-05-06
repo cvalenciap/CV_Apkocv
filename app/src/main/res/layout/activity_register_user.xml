@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.RegisterUserActivity">
+
+    <include layout="@layout/view_toolbar_logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="24dp"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/ic_usuario" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@string/font_family_medium"
+                    android:text="@string/lbl_registro_usuario"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/font_family_light"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lbl_descripcion"
+                    android:textColor="@color/text_color_secondary"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/progressLoadSupply"
+                        style="?android:attr/progressBarStyleInverse"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilNumSuminsitro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                        <EditText
+                            android:id="@+id/edtxtNumSuministro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lbl_num_siministro"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:theme="@style/EditText_formulario" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtDondeEncuentroSuminsitro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/font_family_regular"
+                    android:paddingLeft="3dp"
+                    android:text="@string/lbl_donde_encuentro"
+                    android:textColor="@color/text_color_secondary"
+                    android:textSize="10dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/progressLoadPayReference"
+                        style="?android:attr/progressBarStyleInverse"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilReferenciaCobro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                        <EditText
+                            android:id="@+id/edtxtReferenciaCobro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lbl_referencia_cobro_1"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:theme="@style/EditText_formulario" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtDondeEncuentroRefCobr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/font_family_regular"
+                    android:paddingLeft="3dp"
+                    android:text="@string/lbl_donde_encuentro"
+                    android:textColor="@color/text_color_secondary"
+                    android:textSize="10dp" />
+
+                <pe.com.sedapal.ofivirtual.ui.widget.MaterialSpinner
+                    android:id="@+id/spnTipoDocumento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items"
+                    app:ms_arrowColor="@color/text_color_secondary"
+                    app:ms_arrowSize="16dp"
+                    app:ms_floatingLabelColor="@color/text_color_secondary"
+                    app:ms_floatingLabelText="@string/lbl_tipo_documento"
+                    app:ms_hint="@string/lbl_tipo_documento"
+                    app:ms_multiline="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ProgressBar
+                        android:id="@+id/progressLoadDocumentType"
+                        style="?android:attr/progressBarStyleInverse"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilNumDocumento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                        <EditText
+                            android:id="@+id/edtxtNumDocumento"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lbl_num_documento"
+                            android:imeOptions="actionDone"
+                            android:theme="@style/EditText_formulario" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilNombres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtNombres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lbl_nombres"
+                        android:theme="@style/EditText_formulario" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilApellido_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtApellido_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lbl_apellidos_paterno"
+                        android:theme="@style/EditText_formulario" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilApellido_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtApellido_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lbl_apellidos_materno"
+                        android:theme="@style/EditText_formulario" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilNombreEmpresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtNombreEmpresa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lbl_nombre_empresa"
+                        android:theme="@style/EditText_formulario" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtTelefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lbl_telefono"
+                        android:inputType="number"
+                        android:theme="@style/EditText_formulario" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_correo_edtext"
+                        android:hint="@string/lbl_correo"
+                        android:inputType="textEmailAddress"
+                        android:theme="@style/EditText_formulario" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fondo_seccion"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilContrasenia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/registro_usuario_especio_items"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/color_control_seconday">
+
+                        <EditText
+                            android:id="@+id/edtxtContrasenia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lbl_contrasenia"
+                            android:inputType="textPassword"
+                            android:imeOptions="actionDone"
+                            android:theme="@style/EditText_formulario" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/txtValidadorContrasenia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_family_regular"
+                        android:text="@string/lbl_contrasenia_descripcion"
+                        android:textColor="@color/text_color_secondary"
+                        android:textSize="10dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilRepetirContrasenia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/registro_usuario_especio_items"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/color_control_seconday">
+
+                        <EditText
+                            android:id="@+id/edtxtRepetirContrasenia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lbl_repetir_contrasenia"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:theme="@style/EditText_formulario" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/txtValidadorRepetirContrasenia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/registro_usuario_especio_items"
+                        android:fontFamily="@string/font_family_regular"
+                        android:text="@string/lbl_repetir_contrasenia_descripcion"
+                        android:textColor="@color/text_color_secondary"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <CheckBox
+                        android:id="@+id/chkTerminosCondiciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/Checkbox_formulario" />
+
+                    <TextView
+                        android:id="@+id/txtTerminosCondiciones"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@string/font_family_regular"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="4sp"
+                        android:text="@string/lbl_acepto_terminos_condiciones"
+                        android:textColor="@color/text_color_secondary"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <CheckBox
+                        android:id="@+id/chkRecNotifica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/Checkbox_formulario" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@string/font_family_regular"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="4sp"
+                        android:text="@string/lbl_recibir_notificaciones_correos"
+                        android:textColor="@color/text_color_secondary"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegistrarme"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/button_blue_background"
+                android:text="@string/lbl_registrarme"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

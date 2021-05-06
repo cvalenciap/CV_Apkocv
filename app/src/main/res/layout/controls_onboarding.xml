@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/viewPagerCountDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pager_height"
+        android:layout_above="@+id/ll_footer"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/ll_footer"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="108dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/lbl_btn_ingresar"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/ripple_round_border_button"
+            />
+
+        <LinearLayout
+            android:id="@+id/llRegistrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@string/font_family_light"
+                android:text="@string/txt_no_tienes_cuenta"/>
+            <TextView
+                android:id="@+id/txtRegistrate"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@string/font_family_medium"
+                android:text="@string/txt_registrate"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

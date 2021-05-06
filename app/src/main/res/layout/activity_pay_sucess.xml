@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_blue_degree"
+    tools:context=".ui.activity.PaySuccessActivity">
+    <include layout="@layout/view_toolbar_close_not_background"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+        <LinearLayout
+            android:layout_above="@+id/btnRegresar"
+            android:id="@+id/llResultPagoOk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imvIcono"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/txtTittle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/ic_confirmation" />
+
+            <TextView
+                android:id="@+id/txtTittle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_pronto_pago"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@string/font_family_medium"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="Nro. de operación:"
+                        android:layout_marginRight="15dp" />
+
+                    <TextView
+                        android:id="@+id/txtNumeroOperacion"
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@string/font_family_light"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@string/font_family_medium"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="Fecha y hora:"
+                        android:layout_marginRight="15dp" />
+
+                    <TextView
+                        android:id="@+id/txtFechaHora"
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@string/font_family_light"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="2020-03-09 14:19:36" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@string/font_family_medium"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="Importe:"
+                        android:layout_marginRight="15dp" />
+
+                    <TextView
+                        android:id="@+id/txtImporte"
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@string/font_family_medium"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="581.60" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@string/font_family_medium"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="Correo:"
+                        android:layout_marginRight="15dp" />
+
+                    <TextView
+                        android:id="@+id/txtCorreoUsuario"
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@string/font_family_light"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="mbernilla@sedapal.com.pe" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@string/font_family_medium"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="Tarjeta:"
+                        android:layout_marginRight="15dp" />
+
+                    <TextView
+                        android:id="@+id/txtNumeroTarjeta"
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@string/font_family_light"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@string/font_family_medium"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="Nro. Liquidación:"
+                        android:layout_marginRight="15dp" />
+
+                    <TextView
+                        android:id="@+id/txtNumeroLiquidacion"
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@string/font_family_light"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="24034" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@string/font_family_medium"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="Código de la transacción:"
+                        android:layout_marginRight="15dp" />
+
+                    <TextView
+                        android:id="@+id/txtCodigoTransaccion"
+                        android:layout_below="@+id/imvIcono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@string/font_family_light"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:text="098asd098-90a8sd90asdj-675dfgx-xcv765xcv" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="Regresar"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/ripple_round_border_button"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

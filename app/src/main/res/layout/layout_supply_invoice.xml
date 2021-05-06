@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal">
+        <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_invoice"/>
+        <TextView
+                android:id="@+id/txtEstadoSuministro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_mis_recibos"
+                android:textSize="12sp"
+                android:fontFamily="@string/font_family_regular"
+                android:textColor="@color/text_color_primary"
+        />
+    </LinearLayout>
+
+    <View
+            android:layout_marginBottom="8dp"
+            android:id="@+id/viewSeparetor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_item_separador_size"
+            android:background="@color/color_line_Separador"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+    >
+
+        <pe.com.sedapal.ofivirtual.ui.component.segment.SegmentedGroup
+                android:id="@+id/segmented2"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:orientation="horizontal"
+                segmentedgroup:sc_border_width="1dp"
+                segmentedgroup:sc_corner_radius="4dp"
+                segmentedgroup:sc_tint_color="#009ff6"
+                segmentedgroup:sc_unchecked_tint_color="#FFFFFF">
+
+            <RadioButton
+                    android:id="@+id/rbtnRecibosPendientes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:text="@string/lbl_recibos_pendientes"
+                    style="@style/RadioButton" />
+
+            <RadioButton
+                    android:id="@+id/rbtnRecibosPagados"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:text="@string/lbl_recibos_pagados"
+                    style="@style/RadioButton" />
+        </pe.com.sedapal.ofivirtual.ui.component.segment.SegmentedGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/flSupplyPendingInvoices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="false" />
+
+        <FrameLayout
+            android:id="@+id/flSupplyPayInvoices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="false" />
+    </LinearLayout>
+</LinearLayout>

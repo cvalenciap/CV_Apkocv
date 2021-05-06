@@ -1,0 +1,178 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:windowBackground">@color/fondo_color</item>
+        <item name="colorControlNormal">@color/color_control_normal_2</item>
+        <item name="colorControlHighlight">@color/color_control_highlight</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+        <item name="android:textColorHint">@color/text_color_secondary</item>
+        <item name="colorControlActivated">@color/colorActivate</item>
+        <item name="colorError">@color/error_color</item>
+    </style>
+
+    <style name="AppThemeLogin" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:windowBackground">@color/fondo_color</item>
+        <item name="colorControlNormal">@color/color_control_normal</item>
+        <item name="colorControlHighlight">@color/color_control_highlight</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorError">@color/error_color</item>
+    </style>
+
+    <style name = "AppThemeOnboarding" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="colorControlNormal">@color/color_control_normal</item>
+        <item name="colorControlHighlight">@color/color_control_highlight</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MailSpinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="backgroundTintMode">src_atop</item>
+    </style>
+
+    <style name="EditText_formulario">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">@string/font_family_regular</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Checkbox_formulario" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/color_check_greeen</item>
+        <item name="android:textColorSecondary">@color/color_control_highlight</item>
+    </style>
+
+    <style name="Checkbox_formulario_transparent" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@android:color/transparent</item>
+        <item name="android:textColorSecondary">@color/color_control_highlight</item>
+    </style>
+
+    <!--PROGRESS DIALOG-->
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorActivate</item>
+    </style>
+
+    <!--PROGRESS DIALOG-->
+    <style name="AppCompatAlertDialogStyleWhite" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <!--DIALOG FRAGMENT-->
+    <style name="AppCompatAlertDialogFragmentStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorActivate</item>
+        <item name="android:background">@drawable/round_borders_dialog</item>
+    </style>
+
+    <!--Error control-->
+    <style name="editText_control_error" parent="AppTheme">
+        <item name="colorControlActivated">@color/error_color</item>
+    </style>
+
+    <!--Normal control-->
+    <style name="editText_control_normal" parent="AppTheme">
+        <item name="colorControlActivated">@color/colorActivate</item>
+    </style>
+
+    <!--Text Toolbar-->
+    <style name="TextToolbar">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!--Navigation bottom-->
+    <style name="bnve_white_bg" parent="bnve">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="bnve">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--Segment control-->
+    <style name="RadioButton">
+        <item name="android:textColor">@drawable/button_segment_text_color</item>
+        <item name="android:minHeight">33dp</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+
+    <style name="DialogInput">
+        <item name="android:windowEnterAnimation">@anim/anim_in_dialog</item>
+        <item name="android:windowExitAnimation">@anim/anim_out_dialog</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="customTabLayout" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="tabIndicatorColor">@color/colorActivate</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="android:dividerPadding">3dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_color_secondary</item>
+        <item name="android:divider">@android:color/black</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabSelectedTextColor">@color/text_color_primary</item>
+
+    </style>
+
+    <!--Style for Splash Screen-->
+    <style name="SplashScreenTheme" parent="AppThemeLogin">
+        <item name ="android:windowBackground"> @drawable/splash_screen_background</item>
+    </style>
+
+
+    <style name="TransparentInfoWindow" parent="android:Theme.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <color name="transparent">#00000000</color>
+
+
+    <style name="ThemeSearchview" parent="AppTheme">
+        <item name="colorControlNormal">@color/colorBackgroundSearchView</item>
+    </style>
+
+</resources>

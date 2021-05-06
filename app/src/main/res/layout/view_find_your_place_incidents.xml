@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <FrameLayout
+                android:id="@+id/frlContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crdInfoUpdateDataMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            app:cardElevation="1dp"
+            app:cardCornerRadius="18dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_secondary"
+                    android:text="@string/lbl_obteniendo_incidencias" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleInverse"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:indeterminate="true" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+                android:id="@+id/llNavButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+
+            <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fab_ticket_margin"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_refresh" />-->
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabMyLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_ticket_margin"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/ic_my_location" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+
+    <integer name="read_timeout">6000</integer>
+    <integer name="connect_timeout">6000</integer>
+    <integer name="time_session">600</integer>
+    <bool name="is_encrypt">true</bool>
+
+    <string name="protocol">http://</string>
+    <string name="host">webapp16.sedapal.com.pe:8080</string>
+    <string name="context_multipago">/OficinaComercialVirtual/api</string>
+
+</resources>

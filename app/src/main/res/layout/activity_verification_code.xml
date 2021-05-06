@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.VerificationCodeActivity">
+
+    <include layout="@layout/view_toolbar_logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ic_verification_code" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@string/font_family_black"
+                    android:text="@string/lbl_codigo_verificación"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@string/font_family_medium"
+                    android:text="@string/lbl_message_digits"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtEmailUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/font_family_medium"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lbl_mail"
+                    android:textColor="@color/text_color_link"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp">
+
+                    <!--
+             width is 6*48 + 4*5 = 308
+             6 characters
+             48dp width for each character (circle is the same as rect) so same width and height
+             4dp space between each character
+             5 spaces (spaces are usually characters - 1.
+             -->
+                    <pe.com.sedapal.ofivirtual.ui.component.pinEntry.PinEntryEditText
+                        android:id="@+id/edtxtPinVerificationCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@null"
+                        android:cursorVisible="false"
+                        android:digits="1234567890"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textIsSelectable="false"
+                        android:textSize="24dp"
+                        app:pinAnimationType="fromBottom"
+                        app:pinBackgroundDrawable="@drawable/background_pin"
+                        app:pinBackgroundIsSquare="true"
+                        app:pinCharacterSpacing="10dp"
+                        app:pinTextBottomPadding="16dp"
+                        tools:ignore="SpUsage" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnValidateVerificationCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/button_blue_background"
+                    android:text="@string/lbl_btn_validate"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@string/font_family_light"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lbl_not_receive_cod_confirm"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtSendConfirmCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="15dp"
+                    android:text="@string/lbl_resend_cod_confirm"
+                    android:textColor="@color/colorActivate"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,467 @@
+<resources>
+    <string name="app_name">OCV Sedapal</string>
+
+
+    <!--Login Activity-->
+    <string name="lbl_btn_iniciar_sesion">Iniciar Sesión</string>
+    <string name="lbl_correo">Correo</string>
+    <string name="lbl_suministro">N° de suministro</string>
+    <string name="lbl_contrasenia">Contraseña</string>
+    <string name="txt_ingresa_con_suministro">
+        <u>Ingresa con tu suministro</u>
+    </string>
+    <string name="txt_ingresa_con_correo">
+        <u>Ingresa con tu correo</u>
+    </string>
+    <string name="txt_olvidaste_contrasenia">
+        <u>¿Olvidaste tu contraseña?</u>
+    </string>
+    <string name="txt_no_tienes_cuenta">¿No tienes cuenta?</string>
+    <string name="txt_registrate">
+        <u>Regístrate</u>
+    </string>
+    <string name="title_activity_onboarding">OnboardingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="lbl_progressdialog_validando_usuario">Validando usuario</string>
+    <string name="lbl_progressdialog_validando_suministro">Validando suministro</string>
+    <string name="lbl_correo_incorrecto">Correo Incorrecto</string>
+    <string name="lbl_suministro_incorrecto">Suministro Incorrecto</string>
+    <string name="lbl_intentar_nuevamente">Intentar de nuevo</string>
+    <string name="mensaje_ingrese_numero_suministro_valido">Ingrese un numero de suministro válido</string>
+    <string name="mensaje_ingresepassword">Ingrese su contraseña</string>
+    <string name="lbl_volver_a_ingresar">Volver a ingresar</string>
+
+    <!-- Onboarding Activity. -->
+    <string name="lbl_btn_ingresar">Ingresar</string>
+    <string name="ob_desc1">Disfruta de nuestra oficina virtual renovada.</string>
+    <string name="ob_desc2">Podrás pagar tus recibos de manera rápida y segura.</string>
+    <string name="ob_desc3">Recibirás notificaciones de cortes y alertas de pago.</string>
+    <string name="ob_desc4">Podrás ver el detalle de tus recibos, cada mes.</string>
+
+    <!--Dialog Fragments-->
+    <string name="lbl_seleccionar">
+        <u>Seleccionar</u>
+    </string>
+
+    <!--Registro de usuario Activity-->
+    <string name="lbl_obligatorio_ind">(Obligatorio)</string>
+    <string name="lbl_registro_usuario">Registro de usuario</string>
+    <string name="lbl_descripcion">Llena todos los campos obligatorios para registrarte y disfrutar de nuestro renovada
+        web
+    </string>
+    <string name="lbl_num_siministro">N° de suministro</string>
+    <string name="lbl_donde_encuentro">¿Dónde lo encuentro?</string>
+    <string name="lbl_referencia_cobro_1">Referencia de cobro</string>
+    <string name="lbl_referencia_cobro_2">Referencia de cobro 2</string>
+    <string name="lbl_tipo_solicitante">Tipo de solicitante</string>
+    <string name="lbl_tipo_documento">Tipo de documento</string>
+    <string name="lbl_num_documento">N° de documento</string>
+    <string name="lbl_nombres">Nombres</string>
+    <string name="lbl_apellidos_paterno">Apellido Paterno</string>
+    <string name="lbl_apellidos_materno">Apellido Materno</string>
+    <string name="lbl_nombre_empresa">Nombre de la empresa</string>
+    <string name="lbl_sexo">Sexo</string>
+    <string name="lbl_distrito">Distrito</string>
+    <string name="lbl_direccion">Dirección</string>
+    <string name="lbl_direccion_correo">Correo</string>
+    <string name="lbl_fecha_nacimiento">Fecha de nacimiento</string>
+    <string name="lbl_opcional">Opcional</string>
+    <string name="lbl_telefono_1">Teléfono 1</string>
+    <string name="lbl_telefono_2">Teléfono 2</string>
+    <string name="lbl_telefono">Teléfono</string>
+    <string name="lbl_contrasenia_registro">Contraseña</string>
+    <string name="lbl_contrasenia_descripcion">Debe ser mayor a 8 dígitos, tener mayúscula, minúsculas y números
+    </string>
+    <string name="lbl_repetir_contrasenia_descripcion">Debe de coincidir con la contraseña</string>
+    <string name="lbl_repetir_contrasenia">Repetir contraseña</string>
+    <string name="lbl_debe_coincidir_contrasenia">Debe de coincidir con la contraseña</string>
+    <string name="lbl_acepto_terminos_condiciones">Acepto los
+        <u>Términos y condiciones</u>
+    </string>
+    <string name="lbl_recibir_notificaciones_correos">Recibir notificaciones y correos de Sedapal</string>
+    <string name="lbl_no_soy_un_robot">No soy un robot</string>
+    <string name="lbl_registrarme">REGISTRARME</string>
+    <string name="lbl_error_correo">Ingrese un correo válido</string>
+    <string name="lbl_error_numero_documento">Ingrese un número de documento válido</string>
+    <string name="lbl_error_til_number_supply">Ingrese un número de suministro válido</string>
+    <string name="lbl_error_til_pay_reference">Ingrese una referencia de cobro válida</string>
+    <string name="lbl_error_til_nombres">Ingrese su(s) nombre(s)</string>
+    <string name="lbl_error_til_apellido_1">Ingrese su apellido paterno</string>
+    <string name="lbl_error_til_apellido_2">Ingrese su apellido materno</string>
+    <string name="lbl_error_til_empresa">Ingrese el nombre de la empresa</string>
+    <string name="lbl_error_til_telefono">Ingrese un telefono válido</string>
+    <string name="lbl_suministro_valido">El suministro ingresado es válido</string>
+    <string name="lbl_suministro_invalido">El suministro ingresado no es válido</string>
+    <string name="lbl_suministro_verificado">Suministro verificado</string>
+    <string name="lbl_progressdialog_suministro_verif">Verificando suministro</string>
+    <string name="lbl_referencia_cobro_verificado">Referencias de cobro verificadas</string>
+    <string name="lbl_progressdialog_referencia_cobro">Verificando referencias de cobro</string>
+
+    <string name="lbl_dialog_registro_correcto">¡Gracias por registrarte!</string>
+    <string name="lbl_dialog_volver_inicio">Volver a inicio</string>
+
+    <string name="lbl_obligatorio">Obligatorio</string>
+
+    <!--Terminos y condiciones activity-->
+    <string name="contenido_terminos_condiciones">
+        CONDICIONES PARA ACCEDER AL SERVICIO\n
+        a) Registrarse como usuario del servicio y recibir la clave correspondiente enviada en forma electrónica por
+        SEDAPAL de un suministro en el cual se tiene legítimo interés.
+        b) Disponer del equipo necesario para establecer una conexión a Internet.
+        c) Disponer de su propia cuenta de acceso a Internet.\n
+        USO Y LIMITACIONES DEL SERVICIO\n
+        I.- POLÍTICA DE PRIVACIDAD\n
+        1.- Cuando se registra en el servicio se recibe un número de USUARIO que es el mismo del número de suministro de
+        agua potable y/o alcantarillado, recibirá además una Clave.
+        2.- Ud. es el único responsable si no mantiene la confidencialidad de su cuenta y contraseña.
+        3.- Ud. Es el único responsable de cualquier o todas las actividades que ocurran en su cuenta.
+        4.- Puede cambiar su contraseña cuando lo desee, siguiendo las instrucciones en la página del servicio.
+        5.- El USUARIO notificará inmediatamente a SEDAPAL de cualquier uso no autorizado de su cuenta, o cualquier
+        intrusión de seguridad conocida por el USUARIO al correo sedanet@sedapal.com.pe .\n
+        II.- RESPONSABILIDADES DEL SERVICIO\n
+        1.- SEDAPAL podrá modificar, suspender o terminar el servicio en cualquier momento y sin previo aviso al
+        usuario.
+        -
+        2.– SEDAPAL no se responsabiliza por la interrupción del servicio, sea ocasionado por problemas técnicos
+        internos o por parte de terceros, o por cualquier causa que pudiese afectar al SERVICIO.
+        3.- SEDAPAL declina cualquier responsabilidad sobre errores que se cometan en el SERVICIO, ya sea de recepción,
+        envío, parte o general, siempre que esto dependa terceros.
+        III.- PROHIBICIÓN DE VENTA O USO COMERCIAL DEL SERVICIO
+        1.- EL USUARIO tiene derecho a usar el SERVICIO estrictamente para los fines de información de su suministro.
+        2.- EL USUARIO acepta no revender ni hacer ningún uso comercial de la información que SEDAPAL brinda.\n
+        IV.- OTRAS LIMITACIONES \n -
+        1.- La Información que SEDAPAL brinda a través de este servicio no puede ser divulgada fuera de los que tengan
+        legítimo interés de la información brindada.
+        2.- Cumplir con las leyes y regulaciones aplicables a nivel nacional e internacional sobre la transmisión de
+        datos técnicos a través del servicio.
+        3.- No usar el servicio para propósitos ilegales.
+        4.- No interferir o destruir las redes conectadas a este servicio.
+        5.- Cumplir con todas las regulaciones, políticas y procedimientos de redes conectadas a este Servicio.\n
+        V.- MARCO LEGAL APLICABLE \n -
+        1.- Ley de Procedimiento Administrativo General N°27444 (aplicacion supletoria).
+        2.- D.S. N° 018-2001-PCM: Garantiza a los ciudadanos el acceso a la información que poseen las entidades de la
+        administración publica.
+    </string>
+    <string name="title_terminos_condiciones">Términos y condiciones del servicio AQUANET</string>
+    <string name="lbl_declinar">
+        <u>Declinar</u>
+    </string>
+    <string name="lbl_btn_acepto_terminos">ACEPTO LOS TÉRMINOS</string>
+    <string name="lbl_progressdialog_registro_usuario">Registrando usuario</string>
+    <string name="lbl_progressdialog_document_verif">Verificando documento</string>
+
+    <!-- ACTIVITY OLVIDE CONTRASEÑA RECUPERACION POR CORREO-->
+    <string name="lbl_olvide_contrasenia">¿Olvidaste tu contraseña?</string>
+    <string name="lbl_ingresa_recupera_contrasenia">Ingresa tu correo para reestablecer tu constraseña</string>
+    <string name="lbl_btn_enviar_contrasenia_correo">ENVIAR</string>
+    <string name="lbl_volver_contrasenia_correo">
+        <u>Volver</u>
+    </string>
+
+    <!-- ACTIVITY OLVIDE CONTRASEÑA RECUPERACION POR CORREO-->
+    <string name="lbl_titulo_recordatorio_contrasenia">Recordatorio de contraseña</string>
+    <string name="lbl_descripcion_recordatorio_contrasenia">Usted solicitó recordar el usuario y contraseña de registro
+        de Aquanet.
+    </string>
+    <string name="lbl_btn_volver_inicio">VOLVER AL INICIO</string>
+    <string name="lbl_recordatorio_usuario">Usuario</string>
+    <string name="lbl_recordatorio_Contraseña">Contraseña</string>
+    <string name="mensaje_ingrese_correo_valido">Ingrese un correo válido</string>
+    <string name="mensaje_ingrese_correo">Ingrese un correo válido para reestablecer su contraseña</string>
+    <string name="lbl_progressdialog_recuperacion_contraseña">Solicitando recuperacion de contraseña</string>
+    <string name="lbl_hemos__enviado_correo">Hemos eviando un correo electrónico a</string>
+    <string name="lbl_con_su_usuario">con su usuario y contraseña.</string>
+    <string name="lbl_volver_inicio">Volver al inicio</string>
+    <string name="lbl_volver_pantalla_principal">Volver al menú</string>
+
+    <!-- ACTIVITY OLVIDE CONTRASEÑA RECUPERACION POR SUMINISTRO-->
+    <string name="lbl_olvide_contrasenia_suminsitro">¿Olvidaste tu contraseña?</string>
+    <string name="lbl_ingresa_recupera_contrasenia_suministro">Ingresa tu suministro para restablecer tu constraseña
+    </string>
+    <string name="lbl_btn_enviar_contrasenia_suministro">ENVIAR</string>
+    <string name="lbl_edtxt_suministro">Suministro</string>
+    <string name="lbl_edtxt_respuesta">Respuesta</string>
+    <string name="lbl_propietario">Tipo de solicitante</string>
+    <string name="lbl_pregunta_secreta">Pregunta secreta</string>
+    <string name="lbl_volver_contrasenia_suministro">
+        <u>Volver</u>
+    </string>
+    <string name="lbl_copiar_contrasenia">Contraseña copiada</string>
+
+    <!--ACTIVITY ACTUALIZAR DATOS-->
+    <string name="lbl_titulo_act_datos">Actualiza tus datos</string>
+    <string name="lbl_descripcion_act_datos">Si actualizas los campos tu experiencia será mejor.</string>
+    <string name="lbl_actualizar_act_datos">ACTUALIZAR</string>
+    <string name="lbl_progressdialog_actualizando_usuario">Actualizando tus datos</string>
+    <!--<string name="lbl_num_siministro">N° de suministro</string>-->
+
+    <!--ACTIVITY DETALLE DEL RECIBO-->
+    <string name="lbl_total_facturado">Total facturado</string>
+    <string name="lbl_monto_total_detalle">S/ 00.00</string>
+    <string name="lbl_monto_pagado">Monto pagado</string>
+    <string name="lbl_pago_realizado">Pago realizado</string>
+    <string name="lbl_vencimiento_pago">Vencimiento</string>
+    <string name="lbl_fecha_pago_realizado">00/00/0000</string>
+    <string name="lbl_num_recibo">Nº de recibo</string>
+    <string name="lbl_num_suministro">Nº de suministro</string>
+    <string name="lbl_num_recibo_detail">00000000000</string>
+    <string name="lbl_referencia_cobro">Referencia de cobro</string>
+
+    <string name="lbl_estado_recibo">Estado del recibo</string>
+
+
+    <string name="lbl_ref_cobro_detail">123546567</string>
+    <string name="lbl_ver_recibo">VER RECIBO</string>
+    <string name="lbl_detalle_facturacion">Detalle de facturación</string>
+    <string name="lbl_detalle_pago">Detalle de pago</string>
+    <string name="lbl_cargo_fijo">Cargo Fijo</string>
+    <string name="lbl_volumen_agua">Volumen de agua potable</string>
+    <string name="lbl_servicio_alcantarillado">Servicio de alcantarillado</string>
+    <string name="lbl_igv">I.G.V 18%</string>
+    <string name="lbl_download_pdf">Obteniendo recibo</string>
+    <string name="lbl_fecha_pago_detail">Fecha de pago</string>
+    <string name="lbl_forma_pago_detail">Forma de pago</string>
+    <string name="lbl_lugar_pago_detail">Lugar de pago</string>
+    <string name="lbl_monto_pago_detail">Monto de pago</string>
+    <string name="lbl_not_aplication_open_file">Debe tener instalado un visor de PDF para visualizar el archivo.</string>
+
+    <string name="lbl_money_soles">S/</string>
+    <string name="lbl_meters_cubic">m&#179;</string>
+
+    <!--FRAGMENT HOME-->
+    <string name="lbl_suminsitro">Suministro</string>
+    <string name="lbl_estado_suministro">Habilitado</string>
+    <string name="lbl_titular_suministro">Titular</string>
+    <string name="lbl_numero_suministro">0000000</string>
+    <string name="lbl_direccion_suministro">Jr. Nombre del jirón, numero, distrito</string>
+    <string name="lbl_deuda_total">Deuda total</string>
+    <string name="lbl_monto_total">S/ 000.00</string>
+    <string name="lbl_graficos_consumo">Gráficos de consumo</string>
+    <string name="lbl_estado">Estado</string>
+
+    <string name="lbl_mis_recibos">Mis recibos</string>
+    <string name="lbl_recibos_pendientes">Recibos pendientes</string>
+    <string name="lbl_recibos_pagados">Recibos pagados</string>
+
+    <string name="lbl_fecha_recibo">Mes del recibo</string>
+    <string name="lbl_tipo_cobro_consumo">Por consumo</string>
+    <string name="lbl_precio_total">S/. 00.00</string>
+    <string name="lbl_vencimiento">Vencimiento</string>
+    <string name="lbl_fecha_vencimiento">00/00/0000</string>
+    <string name="lbl_fecha_pago">Fecha de pago</string>
+    <string name="lbl_hint_search">Ingrese un suministro...</string>
+    <string name="lbl_no_recibos_pendientes">¡Felicidades! No tienes recibos pendientes</string>
+    <string name="lbl_no_recibos_pagados">No se encontraron recibos pagados</string>
+    <string name="lbl_agradec_no_recibos_pendientes"><b>Sedapal</b> agradece tu compromiso con nosotros</string>
+    <string name="lbl_error_obtener_datos">Ocurrió un error al obtener los recibos</string>
+    <string name="lbl_recibo_vencido_dias">Recibo vencido</string>
+    <string name="lbl_pagar_recibo">PAGAR RECIBO</string>
+    <string name="lbl_recibos_pendientes_pagar">Ud. tiene otros recibos pendientes por pagar</string>
+    <string name="lbl_consultando">Consultando suministro</string>
+
+    <!--Grphics Activity-->
+    <string name="lbl_tittle_toolbar_graphics">Gráficos de consumo</string>
+    <string name="lbl_nuevos_soles">Nuevos soles</string>
+    <string name="lbl_metros_cubicos">Metros cúbicos</string>
+    <string name="lbl_descargar_grafico">DESCARGAR GRÁFICO</string>
+
+    <!--Pay Summary Activity-->
+    <string name="lbl_ittle_pay_summary">Resumen de pago</string>
+    <string name="lbl_recibos_pagar">Recibos a pagar</string>
+    <string name="lbl_subtotal">Subtotal</string>
+    <string name="lbl_uso_canal_online">Uso de canal online</string>
+    <string name="lbl_monto_uso_canal_online">1.00</string>
+    <string name="lbl_monto">S/ 00.00</string>
+    <string name="lbl_total">Total</string>
+    <string name="lbl_codigo_liquidacion">Código de liquidación</string>
+    <string name="lbl_estoy_acuerdo">Estoy de acuerdo con los </string>
+    <string name="lbl_terminos_condiciones">Términos y condiciones</string>
+    <string name="lbl_politicas_devolucion">Políticas de devolución</string>
+
+    <!--Incidencias Fragment-->
+    <string name="lbl_indc_distrito">Distrito</string>
+    <string name="lbl_num_incidencias">Num. Incidencias: </string>
+
+
+    <!--Dialogs Registro Usuario Activity-->
+    <string name="lbl_dialog_verifica_num_suministro">Verificando tu número de suministro</string>
+    <string name="lbl_dialog_verifica_referencia_cobro">Verificando referencias de cobro</string>
+
+    <!--Eventos dialog fragment-->
+    <string name="lbl_btn_dialog_registrate">REGISTRATE</string>
+    <string name="lbl_btn_dialog_actualizarapp">ACTUALIZAR</string>
+    <string name="lbl_ocurrio_error">Ocurrió un error</string>
+    <string name="lbl_ocurrio_advertencia">Advertencia</string>
+
+    <string name ="lbl_aceptar">Aceptar</string>
+    <string name="lbl_sesion_finalizada">Sesión expirada</string>
+
+    <!--Others fragment-->
+    <string name="lbl_others_fragment">Actualizar mis datos</string>
+    <string name="lbl_close_session">Cerrar sesión</string>
+    <string name="lbl_titulo_fragment_others">Otras opciones</string>
+    <string name="lbl_dialog_cerrar_sesion">Cerrar sesión</string>
+    <string name="lbl_dialog_mensaje_cerrar_sesion">¿Esta seguro que desea cerrar su sesión?</string>
+    <string name="lbl_cerrando_sesion">Cerrando sesión</string>
+
+    <!--Detalle evento Activity-->
+    <string name="lbl_tittle_toolbar_incidencia_operativa">Incidencias Operativas</string>
+    <string name="lbl_obteniendo_incidencias">Obteniendo incidencias</string>
+
+    <!--Commercial office activity-->
+    <string name="lbl_continuar_cerrar_sesion">Volver a ingresar</string>
+    <string name="lbl_esta_seguro_cerrar_sesion">¿Esta seguro que desea salir de la aplicación?</string>
+    <string name="lbl_presiona_salir_aplicacion">Presione nuevamente el boton atrás para salir de la aplicación</string>
+
+    <!--Verification code activity-->
+    <string name="lbl_codigo_verificación">Código de verificación</string>
+    <string name="lbl_message_digits">Ingresa el código de 4 dígitos enviado al correo</string>
+    <string name="lbl_btn_validate">Validar</string>
+    <string name="lbl_mail">mail@sedapal.com.pe</string>
+    <string name="lbl_not_receive_cod_confirm">¿No ha llegado el correo de confirmación?</string>
+    <string name="lbl_resend_cod_confirm">Reenviar código de confirmación</string>
+    <string name="msg_insert_all_numbers_pin">Ingrese los 4 dígitos del código de verificación</string>
+    <string name="lbl_progressdialog_verify_code">Verificando código</string>
+    <string name="lbl_progressdialog_send_code">Enviando código</string>
+
+    <!--Error layouts-->
+    <string name="lbl_habilitar_gps">GPS deshabilitado</string>
+    <string name="lbl_descripcion_gps">Active su GPS para acceder a los lugares de pago</string>
+    <string name="lbl_no_incidencias">No se encontraron incidencias</string>
+
+    <!--Pay -->
+    <string name="confirm_payment_error_visa">Se ha tenido un problema con VISA. Por favor vuelva a intentar</string>
+
+    <!--MESES DEL ANIO-->
+    <string name="mes_enero">Enero</string>
+    <string name="mes_febrero">Febrero</string>
+    <string name="mes_marzo">Marzo</string>
+    <string name="mes_abril">Abril</string>
+    <string name="mes_mayo">Mayo</string>
+    <string name="mes_junio">Junio</string>
+    <string name="mes_julio">Julio</string>
+    <string name="mes_agosto">Agosto</string>
+    <string name="mes_septiembre">Setiembre</string>
+    <string name="mes_octubre">Octubre</string>
+    <string name="mes_noviembre">Noviembre</string>
+    <string name="mes_diciembre">Diciembre</string>
+
+
+
+    <string name="mes_enero_abrv">ENE</string>
+    <string name="mes_febrero_abrv">FEB</string>
+    <string name="mes_marzo_abrv">MAR</string>
+    <string name="mes_abril_abrv">ABR</string>
+    <string name="mes_mayo_abrv">MAY</string>
+    <string name="mes_junio_abrv">JUN</string>
+    <string name="mes_julio_abrv">JUL</string>
+    <string name="mes_agosto_abrv">AGO</string>
+    <string name="mes_septiembre_abrv">SET</string>
+    <string name="mes_octubre_abrv">OCT</string>
+    <string name="mes_noviembre_abrv">NOV</string>
+    <string name="mes_diciembre_abrv">DIC</string>
+
+    <!--ACTIVITY PAY SUCESS-->
+    <string name="lbl_pronto_pago">¡Su pago se procesó satisfactoriamente!</string>
+    <string name="lbl_tu_pago">Tu pago de &#160;</string>
+    <string name="lbl_ha_sido_procesado_correctamente">&#160;ha sido procesado correctamente con el número de transacción&#160;</string>
+    <string name="lbl_uso_canal_online_desc">&#160;(incluye uso canal online)&#160;</string>
+    <!--ACTIVITY PAY ERROR-->
+    <string name = "lbl_lo_sentimos">Lo sentimos...</string>
+    <string name="lbl_descripcion_error">Por alguna razón no podemos procesar tu pago. Por favor intenta de nuevo más tarde.</string>
+
+
+    <string-array name="array_form_sexo">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+    <string-array name="array_name">
+        <item>Tipo de solicitante</item>
+        <item>Array Item One</item>
+        <item>Array Item Two</item>
+        <item>Array Item Three</item>
+    </string-array>
+
+    <string-array name="array_name_spinner">
+        <item>Array Item One</item>
+        <item>Array Item Two</item>
+        <item>Array Item Three</item>
+    </string-array>
+
+    <!--Menú de navegacion -->
+    <string name="item_1">Item 1</string>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">Item 3</string>
+    <string name="item_4">Item 4</string>
+    <string name="item_5">Item 5</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_activity_commercial_officev2">CommercialOfficev2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_graphics">GraphicsActivity</string>
+    <string name="title_activity_prueba_maps">Map</string>
+
+    <!--SERVICES-->
+    <string name="broadcast_success">BROADCAST_SUCCESS</string>
+
+    <string name="broadcast_sync_completed">pe.com.sedapal.ofivirtual.SYNC_COMPLETED</string>
+    <string name="broadcast_get_amounts_completed">pe.com.sedapal.ofivirtual.GET_AMOUNTS_COMPLETED</string>
+
+    <string name="broadcast_pay_liquidation_completed">pe.com.sedapal.ofivirtual.PAY_LIQUIDATION_COMPLETED</string>
+    
+    
+    <!--VISA-->
+    <string name="error_no_realizar_pago">En estos momentos no es posible realizar el pago, intente más tarde.</string>
+    <string name="connectionError">connectionError</string>
+    <string name="error_conexion">Error de conexión</string>
+    <string name="advertencia_pago">Advertencia</string>
+    <string name="continuar_pago">Continuar con el pago</string>
+    <string name="contenido_aviso">Asegúrese de tener buena cobertura de red, no cierre el aplicativo hasta completar el pago.</string>
+
+    <!--Webservices liquidacion-->
+    <string name="grant_type">password</string>
+    <string name="applicant_type">001</string>
+    <string name="nis_rad">nis_rad</string>
+    <string name="cod_servicio">001</string>
+    <string name="tipo_documento">001</string>
+
+    <!--TOUR GUIDE-->
+    <string name="tour_tittle_1">Mis recibos</string>
+    <string name="tour_description_1">Aquí puedes encontrar toda la información relacionada a tus recibos</string>
+
+    <string name="tour_tittle_2">Lugares de pago</string>
+    <string name="tour_description_2">Aquí puedes visualizar lugares de pago cercanos a tu ubicación</string>
+
+    <string name="tour_tittle_3">Incidencias operativas</string>
+    <string name="tour_description_3">Aquí puedes observar las incidencias cercanas a tu ubicación</string>
+
+    <string name="tour_tittle_4">Otros</string>
+    <string name="tour_description_4">Aquí puedes actualizar tu perfil y cerrar tu sesión</string>
+
+    <!--REGISTER USER SUCCESS-->
+    <string name="lbl_success_message_part1">Estimado(a) usuario, te has registrado correctamente con el correo&#160;</string>
+    <string name="lbl_success_message_part2">, en breve recibirás un código de verificación en tu correo, el mismo que será solicitado
+        la primera vez que ingreses al aplicativo. Si no lo recibes en tu bandeja, busca tu carpeta de spam.&#160;</string>
+
+    <!--Messages New Versions App-->
+    <string name="msg_update_app_new_version">Existe una nueva versión disponible en la Play Store. Deberás actualizar
+        la aplicación para poder continuar
+    </string>
+    <string name="msg_update_app_optional">Existe una nueva versión disponible en la Play Store. Te recomendamos
+        actualizar la aplicación para acceder a una versión mejorada
+    </string>
+    <string name="msg_update_other_moment">En otro momento</string>
+    <string name="msg_update">Actualizar</string>
+    <string name="msg_update_other_error">En estos momentos no es posible realizar alguna operación</string>
+
+
+</resources>

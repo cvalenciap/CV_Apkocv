@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.UpdateDataUserActivity">
+
+    <include layout="@layout/view_toolbar_logo" />
+
+    <include layout="@layout/progress_load_resource" />
+
+    <ScrollView
+        android:id="@+id/scrollScreenContaint"
+        android:layout_below="@+id/toolbar_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:orientation="vertical">
+
+                <ImageView android:layout_width="56dp"
+                           android:layout_height="56dp"
+                           android:layout_marginTop="24dp"
+                           android:layout_gravity="center_horizontal"
+                           android:src="@drawable/ic_actualizar_datos"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@string/font_family_medium"
+                        android:textColor="@color/text_color_primary"
+                        android:text="@string/lbl_titulo_act_datos"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@string/font_family_light"
+                        android:textColor="@color/text_color_secondary"
+                        android:text="@string/lbl_descripcion_act_datos"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilNumSuminsitroActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtNumSuministroActDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lbl_num_siministro"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:theme="@style/EditText_formulario" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilReferenciaCobroActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtReferenciaCobroActDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lbl_referencia_cobro_1"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:theme="@style/EditText_formulario" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <pe.com.sedapal.ofivirtual.ui.widget.MaterialSpinner
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items"
+                    android:id="@+id/spnTipoSolicitanteActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ms_arrowColor="@color/text_color_secondary"
+                    app:ms_arrowSize="16dp"
+                    app:ms_floatingLabelColor="@color/text_color_secondary"
+                    app:ms_floatingLabelText="@string/lbl_tipo_solicitante"
+                    app:ms_hint="@string/lbl_propietario"
+                    app:ms_multiline="true" />
+
+                <pe.com.sedapal.ofivirtual.ui.widget.MaterialSpinner
+                    android:id="@+id/spnTipoDocumentoActDatos"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ms_arrowColor="@color/text_color_secondary"
+                    app:ms_arrowSize="16dp"
+                    app:ms_floatingLabelColor="@color/text_color_secondary"
+                    app:ms_floatingLabelText="@string/lbl_tipo_documento"
+                    app:ms_hint="@string/lbl_tipo_documento"
+                    app:ms_multiline="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ProgressBar
+                        android:id="@+id/progressLoadDocumentTypeActDatos"
+                        style="?android:attr/progressBarStyleInverse"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilNumDocumentoActDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                        <EditText
+                            android:id="@+id/edtxtNumDocumentoActDatos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionDone"
+                            android:theme="@style/EditText_formulario" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilNombresActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtNombresActDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditText_formulario" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilApellido_1ActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtApellido_1ActDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditText_formulario" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilApellido_2ActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtApellido_2ActDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditText_formulario" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilNombreEmpresaActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtNombreEmpresaActDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditText_formulario" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <pe.com.sedapal.ofivirtual.ui.widget.MaterialSpinner
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items"
+                    android:id="@+id/spnSexoActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ms_arrowColor="@color/text_color_secondary"
+                    app:ms_arrowSize="16dp"
+                    app:ms_floatingLabelColor="@color/text_color_secondary"
+                    app:ms_floatingLabelText="@string/lbl_sexo"
+                    app:ms_hint="@string/lbl_sexo"
+                    app:ms_multiline="true" />
+
+                <pe.com.sedapal.ofivirtual.ui.widget.MaterialSpinner
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items"
+                    android:id="@+id/spnDistritoActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ms_arrowColor="@color/text_color_secondary"
+                    app:ms_arrowSize="16dp"
+                    app:ms_floatingLabelColor="@color/text_color_secondary"
+                    app:ms_floatingLabelText="@string/lbl_distrito"
+                    app:ms_hint="@string/lbl_distrito"
+                    app:ms_multiline="true" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilDireccionActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtDireccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditText_formulario"
+                        android:hint="@string/lbl_direccion" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCorreoActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/edtxtCorreoActDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditText_formulario"
+                        android:drawableRight="@drawable/ic_correo_edtext"
+                        android:hint="@string/lbl_correo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilFechaNacimientoActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtFechaNacimientoActDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditText_formulario"
+                        android:editable="false"
+                        android:drawableRight="@drawable/ic_fecha_edtext"
+                        android:hint="@string/lbl_fecha_nacimiento" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilTelefono_1ActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtTelefono_1ActDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:theme="@style/EditText_formulario" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilTelefono_2ActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items">
+
+                    <EditText
+                        android:id="@+id/edtxtTelefono_2ActDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:theme="@style/EditText_formulario"
+                        android:hint="@string/lbl_telefono_2" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilContraseniaActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/color_control_seconday">
+
+                    <EditText
+                        android:id="@+id/edtxtContraseniaActDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditText_formulario"
+                        android:inputType="textPassword"
+                        android:hint="@string/lbl_contrasenia" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                        android:id="@+id/txtValidadorContraseniaActDatos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:fontFamily="@string/font_family_regular"
+                        android:textColor="@color/text_color_secondary"
+                        android:textSize="10dp"
+                        android:text="@string/lbl_contrasenia_descripcion"
+                />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilRepetirContraseniaActDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/registro_usuario_especio_items"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/color_control_seconday">
+
+                    <EditText
+                        android:id="@+id/edtxtRepetirContraseniaActDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditText_formulario"
+                        android:inputType="textPassword"
+                        android:hint="@string/lbl_repetir_contrasenia" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                        android:id="@+id/txtValidadorRepetirContraseniaActDatos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginBottom="@dimen/registro_usuario_especio_items"
+                        android:fontFamily="@string/font_family_regular"
+                        android:textColor="@color/text_color_secondary"
+                        android:textSize="10dp"
+                        android:text="@string/lbl_repetir_contrasenia_descripcion"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <CheckBox
+                        android:id="@+id/chkRecNotificaActDatos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/Checkbox_formulario" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@string/font_family_regular"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="4sp"
+                        android:text="@string/lbl_recibir_notificaciones_correos"
+                        android:textColor="@color/text_color_secondary"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/btnActualizarDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="@string/lbl_actualizar_act_datos"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_blue_background" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <!-- OnBoard. -->
+    <dimen name="pager_dot_size">8dp</dimen>
+    <dimen name="pager_height">16dp</dimen>
+    <dimen name="ob_header_top_margin">50dp</dimen>
+
+    <dimen name="ob_desc_padding">30dp</dimen>
+    <dimen name="ob_banner_height">300dp</dimen>
+    <dimen name="items_inbetween">8dp</dimen>
+
+    <dimen name="button_text">18sp</dimen>
+    <dimen name="ob_header_text_size">22sp</dimen>
+    <dimen name="ob_desc_text_size">18sp</dimen>
+
+    <!--Material Spinner-->
+    <dimen name="underline_top_spacing">8dp</dimen>
+    <dimen name="underline_bottom_spacing">4dp</dimen>
+    <dimen name="error_label_spacing">12dp</dimen>
+
+    <dimen name="floating_label_top_spacing">4dp</dimen>
+    <dimen name="floating_label_bottom_spacing">8dp</dimen>
+    <dimen name="floating_label_inside_spacing">12dp</dimen>
+
+    <dimen name="right_left_spinner_padding">8dp</dimen>
+
+    <dimen name="label_text_size">12sp</dimen>
+
+    <dimen name="min_content_height">20dp</dimen>
+
+    <!--Items de las listas-->
+    <dimen name="registro_usuario_especio_items">16dp</dimen>
+
+    <!--Segmented control dimens-->
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+    <dimen name="radio_button_stroke_border">1dp</dimen>
+
+    <!--Circle progress bar-->
+    <dimen name="circle_progress_bar">48dp</dimen>
+
+    <!--Items ArryList-->
+    <dimen name="row_item_separador_size">0.5dp</dimen>
+    <dimen name="row_item_size_width_image">24dp</dimen>
+    <dimen name="row_item_size_heigth_image">24dp</dimen>
+    <dimen name="row_item_size_margin_right_image">10dp</dimen>
+    <dimen name="row_item_size_margin_Left">24dp</dimen>
+    <dimen name="row_item_size_margin_right">24dp</dimen>
+    <dimen name="row_item_size_margin_bottom">8dp</dimen>
+    <dimen name="row_item_size_margin_top">8dp</dimen>
+    <!-- text arrayList-->
+    <dimen name="row_item_name_text_size_small">12sp</dimen>
+    <dimen name="row_item_name_text_size_normal">12sp</dimen>
+    <dimen name="row_item_name_text_size_medium">14sp</dimen>
+
+    <dimen name="fab_ticket_margin">16dp</dimen>
+</resources>

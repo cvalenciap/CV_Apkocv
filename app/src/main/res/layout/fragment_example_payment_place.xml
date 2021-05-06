@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:fitsSystemWindows="true">
+    <RelativeLayout
+            android:id="@+id/rlContentPendingInvoice"
+            android:layout_below="@+id/llTittle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/view_find_your_place"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/llTittle"
+        android:id="@+id/rlNoLocationEnabled"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/layout_not_location_enable_fragment"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

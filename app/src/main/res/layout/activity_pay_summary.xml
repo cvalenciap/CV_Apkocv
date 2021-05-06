@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo_seccion"
+    tools:context=".ui.activity.OlvContraCorreoActivity">
+
+    <include layout="@layout/view_toolbar_back"/>
+
+    <LinearLayout
+        android:layout_below="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorLink="@color/text_color_secondary"
+                android:layout_marginRight="5dp"
+                android:text="Suministro"/>
+
+            <TextView
+                android:id="@+id/txtNumSupply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_primary"
+                android:fontFamily="@string/font_family_medium"
+                android:textSize="16sp"
+                android:text="00000000"/>
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nscrollContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp">
+
+                        <ImageView
+                            android:id="@+id/imvBars"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_invoice" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/imvBars"
+                            android:fontFamily="@string/font_family_medium"
+                            android:text="@string/lbl_recibos_pagar"
+                            android:textColor="@color/text_color_primary"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/color_line_Separador" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvPaySummary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/color_line_Separador" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:paddingTop="13dp"
+                            android:paddingBottom="13dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@string/font_family_medium"
+                                android:text="@string/lbl_subtotal"
+                                android:textColor="@color/text_color_primary"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/txtSubtotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@string/font_family_regular"
+                                android:text="@string/lbl_monto"
+                                android:textColor="@color/text_color_primary"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlUsoCanalOnline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:paddingTop="5dp"
+                            android:layout_marginBottom="13dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@string/font_family_medium"
+                                android:text="@string/lbl_uso_canal_online"
+                                android:textColor="@color/text_color_primary"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/txtUsoCanalOnline"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@string/font_family_regular"
+                                android:text="@string/lbl_monto"
+                                android:textColor="@color/text_color_primary"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/color_line_Separador" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@string/font_family_medium"
+                                android:text="@string/lbl_total"
+                                android:textColor="@color/text_color_primary"
+                                android:textSize="14sp"
+                                android:textStyle="normal" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@string/font_family_light"
+                                    android:text="@string/lbl_codigo_liquidacion"
+                                    android:textColor="@color/text_color_secondary"
+                                    android:textSize="10sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:id="@+id/txtCodigoLiquidacion"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@string/font_family_medium"
+                                    android:textColor="@color/text_color_secondary"
+                                    android:layout_marginLeft="5dp"
+                                    android:textSize="10sp"
+                                    android:textStyle="normal" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtMontoTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_monto"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textSize="18sp"
+                            android:fontFamily="@string/font_family_medium"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp">
+
+                    <CheckBox
+                        android:id="@+id/chkTerminosCondiciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/Checkbox_formulario" />
+
+                    <TextView
+                        android:layout_toRightOf="@+id/chkTerminosCondiciones"
+                        android:id="@+id/txtEstoyAcuerdo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@string/font_family_medium"
+                        android:text="@string/lbl_estoy_acuerdo"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_toRightOf="@+id/txtEstoyAcuerdo"
+                        android:id="@+id/txtTerminosCondiciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@string/font_family_medium"
+                        android:text="@string/lbl_terminos_condiciones"
+                        android:textColor="@color/colorActivate"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="54dp">
+                    <Button
+                        android:id="@+id/btnContinue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:enabled="false"
+                        android:background="@drawable/button_yellow_background"
+                        android:textColor="@android:color/white"
+                        android:text="CONTINUAR" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+    <include
+        android:layout_below="@+id/rlToolbar"
+        layout="@layout/progress_load_screen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+</RelativeLayout>

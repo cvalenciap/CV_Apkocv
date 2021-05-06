@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ws_register_user">/WSUsuario</string>
+    <string name="ws_master">/WSMaestra</string>
+    <string name="ws_general">/general</string>
+    <string name="ws_registro_usuario">/registro-usuario</string>
+    <string name="ws_autenticacion_usuario">/autenticacion-usuario</string>
+    <string name="ws_recibos">/recibos</string>
+    <string name="ws_suministros">/suministros</string>
+    <string name="ws_lugares_pago">/lugares-pago</string>
+    <string name="ws_incidencias">/incidencias</string>
+    <string name="ws_enchufate">/enchufate</string>
+    <string name="ws_pago_ejecutado">/pago-ejecutado</string>
+
+
+    <string name="endpoint_login">/opLogin.php</string>
+    <string name="endpoint_sync">/opSincronizar.php</string>
+    <string name="endponit_login_token">/login</string>
+    <string name="endpoint_carga_pre_definida">/carga-pre-definida</string>
+    <string name="endpoint_valida_suministro">/valida-suministro</string>
+    <string name="endpoint_valida_ref_cobro">/valida-ref-cobro</string>
+    <string name="endpoint_reg_usuario_nuevo">/nuevo</string>
+    <string name="endpoint_actualizar_datos">/actualizar-datos</string>
+    <string name="endpoint_val_tipo_nro_doc">/vali-tipo-nro-doc</string>
+    <string name="endpoint_aut_nuevo_usu">/aut-nuevo-usu</string>
+    <string name="endpoint_aut_antiguo_usu">/aut-antiguo-usu</string>
+    <string name="endpoint_recuperar_contrasena">/recuperar-contrasena</string>
+    <string name="endpoint_vali_preg_secr">/vali-preg_secr</string>
+    <string name="endpoint_lista_recibos_deudas_nis">/lista-recibos-deudas-nis</string>
+    <string name="endpoint_lista_recibos_pagados_nis">/lista-recibos-pagados-nis</string>
+    <string name="endpoint_lista_nis">/lista-nis</string>
+    <string name="endpoint_detalle_nis">/detalle-nis</string>
+    <string name="endpoint_detalle_recibos">/detalle-recibo</string>
+    <string name="endpoint_detalle_pagos">/detalle-pagos</string>
+    <string name="endpoint_recibo_pdf">/recibo-pdf</string>
+    <string name="endpoint_historico_consumo">/historico-consumo</string>
+    <string name="endpoint_lista_agencias">/lista-agencias</string>
+    <string name="endpoint_lista_sucursales">/lista-sucursales</string>
+    <string name="endpoint_municipios_afectados">/municipios-afectados</string>
+    <string name="endpoint_incidencias_municipios">/incidencias-municipios</string>
+    <string name="endpoint_obtener_datos">/obtener-datos</string>
+    <string name="endpoint_validar_recibo_anterior">/validar-recibo-anterior</string>
+    <string name="endpoint_parametros_categoria">/parametros-categoria</string>
+    <string name="endpoint_valida_codigo_confirmacion">/valida-codigo-confirmacion</string>
+    <string name="endpoint_enviar_codigo_confirmacion">/enviar-codigo-confirmacion</string>
+    <string name="endpoint_valida_version">/valida-version</string>
+    <string name="endpoint_obtener_datos_pago">/obtener-datos-pago</string>
+
+    <string name="username_token">OCV_Sedapal</string>
+    <string name="password_token">OCV0109</string>
+
+    <!--Endpoing generacion liquidacion y pago liquidacion-->
+    <string name="endpoint_ocv_generar_liquidacion">/generar-liquidacion</string>
+    <string name="endpoint_ocv_pago_liquidacion">/pagar-liquidacion</string>
+
+</resources>

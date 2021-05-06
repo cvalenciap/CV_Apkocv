@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/fondo_seccion"
+    tools:context=".ui.activity.OlvContraCorreoActivity">
+
+    <include layout="@layout/view_toolbar_back"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llInvoiceAlert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/error_color"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/txtDaysInvoiceVenc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="@string/font_family_medium"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:text="@string/lbl_recibo_vencido_dias"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInfoSupply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_below="@+id/llInvoiceAlert"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginRight="33dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:textColor="@color/text_color_primary"
+                                android:text="@string/lbl_total_facturado"
+                                />
+                            <TextView
+                                android:id="@+id/txtTotalFacturado"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="24sp"
+                                android:textColor="@color/text_color_primary"
+                                android:text="@string/lbl_monto_total_detalle"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:layout_weight="0.1"
+                            android:background="@android:color/transparent">
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="26dp"
+                                android:background="@color/color_line_Separador" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:textColor="@color/text_color_primary"
+                                android:text="@string/lbl_monto_pagado"
+                                />
+                            <TextView
+                                android:id="@+id/txtMontoPagado"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="24sp"
+                                android:textColor="@color/colorActivate"
+                                android:text="@string/lbl_monto_total_detalle"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llVencimiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="16dp"
+                        >
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_calendar"
+                            />
+                        <TextView
+                            android:id="@+id/txtDescripcionFecha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/text_color_secondary"
+                            android:text="@string/lbl_pago_realizado"/>
+                        <TextView
+                            android:id="@+id/txtFechVencimiento"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_primary"
+                            android:fontFamily="@string/font_family_medium"
+                            android:text="@string/lbl_fecha_pago_realizado"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_line_Separador" />
+
+           <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginRight="33dp"
+                    android:weightSum="1"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_color_secondary"
+                            android:text="@string/lbl_num_suministro"
+                            />
+                        <TextView
+                            android:id="@+id/txtNumSuministro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:fontFamily="@string/font_family_medium"
+                            android:textColor="@color/text_color_primary"
+                            android:text="@string/lbl_num_recibo_detail"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/transparent">
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="26dp"
+                            android:background="@color/color_line_Separador" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_color_secondary"
+                            android:text="@string/lbl_referencia_cobro"
+                            />
+                        <TextView
+                            android:id="@+id/txtReferenciaCobro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:fontFamily="@string/font_family_medium"
+                            android:textColor="@color/text_color_primary"
+                            android:text="@string/lbl_ref_cobro_detail"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_line_Separador" />
+
+
+                <LinearLayout android:id="@+id/lyestadoRecibo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginRight="33dp"
+                    android:weightSum="1"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_color_secondary"
+                            android:text="@string/lbl_estado_recibo"
+                            />
+                        <TextView
+                            android:id="@+id/txtestadorecibo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:fontFamily="@string/font_family_medium"
+                            android:textColor="@color/text_color_primary"
+                            android:text=""
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View android:id="@+id/viewSeparador"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_line_Separador" />
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/llVerRecibo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_ver_recibo"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@drawable/color_enable_editext"
+                        android:fontFamily="@string/font_family_medium"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_pdf_file"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_below="@+id/llInfoSupply"
+                android:layout_width="match_parent"
+                android:id="@+id/viewInfoSupply"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/llInfoSupply">
+
+                <LinearLayout
+                    android:id="@+id/llContentInvoice"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            app:cardElevation="3dp">
+
+                            <RelativeLayout
+                                android:id="@+id/rlDetalleFacturacion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:paddingLeft="24dp"
+                                android:paddingTop="13dp"
+                                android:paddingRight="24dp"
+                                android:paddingBottom="13dp">
+
+                                <ImageView
+                                    android:id="@+id/imvBars"
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_bars" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_toRightOf="@+id/imvBars"
+                                    android:fontFamily="@string/font_family_medium"
+                                    android:text="@string/lbl_detalle_facturacion"
+                                    android:textColor="@color/text_color_primary"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal" />
+
+                                <ImageView
+                                    android:id="@+id/imvIconOpen"
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_down" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:id="@+id/llDetalleFacturacion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="vertical">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rcvDetailInvoce"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llContenidoDetallePago"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            app:cardElevation="3dp">
+
+                            <RelativeLayout
+                                android:id="@+id/rlDetallePago"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:paddingLeft="24dp"
+                                android:paddingTop="13dp"
+                                android:paddingRight="24dp"
+                                android:paddingBottom="13dp">
+
+                                <ImageView
+                                    android:id="@+id/imvPayment"
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_payment" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_toRightOf="@+id/imvPayment"
+                                    android:fontFamily="@string/font_family_medium"
+                                    android:text="@string/lbl_detalle_pago"
+                                    android:textColor="@color/text_color_primary"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal" />
+
+                                <ImageView
+                                    android:id="@+id/imvPayIconOpen"
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_down" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:id="@+id/llDetallePago"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="vertical">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rcvDetailPay"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginRight="20dp">
+
+                        <Button
+                            android:id="@+id/btnPayInvoice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/ripple_round_border_button_yellow"
+                            android:text="PAGAR RECIBO"
+                            android:textColor="@android:color/white"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include layout="@layout/progress_load_resource" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="pe.com.sedapal.ofivirtual">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AndroidApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_sedapal"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_sedapal"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name"
+        android:usesCleartextTraffic="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeLogin"></activity>
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.OnboardingActivity"
+            android:label="@string/title_activity_onboarding"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOnboarding" />
+        <activity
+            android:name=".ui.activity.TerminosCondicionesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.OlvContraCorreoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.OlvContraSuministroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RecordatorioPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.UpdateDataUserActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.RegisterUserActivity"
+            android:screenOrientation="portrait">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                        android:host="www.sedapal.com"
+                        android:path="/something"
+                        android:scheme="http"/>
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".ui.activity.DetailInvoceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.GraphicsActivity"
+            android:label="@string/title_activity_graphics"></activity>
+        <activity
+            android:name=".ui.activity.PaySummaryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".ui.activity.IncidentsMunicipalitiesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+
+        <activity
+            android:name=".ui.activity.FindYourPlaceDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+
+        <!--<activity-->
+        <!--    android:name="pe.com.visanet.lib.VisaNetPaymentActivity"-->
+        <!--   android:theme="@android:style/Theme.Dialog" />-->
+
+        <!--<activity
+            android:name="pe.com.visanet.lib.VisaNetPaymentActivity"
+            android:theme="@style/CustomThemeVisa"/>-->
+
+        <activity
+            android:name="lib.visanet.com.pe.visanetlib.presentation.ui.VisaNetAuthorizationActivity"
+            tools:replace="android:theme"
+            android:theme="@style/CustomThemeVisa"/>
+
+        <activity
+            android:name="lib.visanet.com.pe.visanetlib.presentation.ui.VisaNetValidateActivity"
+            tools:replace="android:theme"
+            android:theme="@style/CustomThemeVisa"/>
+
+        <activity
+            android:name=".ui.activity.CommercialOfficeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.PaySuccessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+
+        <activity
+            android:name=".ui.activity.PayErrorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+
+        <activity
+            android:name=".ui.activity.VerificationCodeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.RegisterUserSuccessActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="pe.com.sedapal.ofivirtual.ui.service.SyncService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="pe.com.sedapal.ofivirtual.ui.service.PayLiquidationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!-- BRINDANDO PERMISOS DE LECTURA Y ESCRITURA -->
+        <provider
+            android:name=".ui.component.app.GenericFileProvider"
+            android:authorities="pe.com.sedapal.ofivirtual.ui.component.app.GenericFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

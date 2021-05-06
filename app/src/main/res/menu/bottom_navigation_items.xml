@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/ic_bottom_navigation_invoice"
+            android:title="@string/item_1"/>
+
+    <item
+            android:id="@+id/navigation_notifications"
+            android:icon="@drawable/ic_bottom_navigation_pay_places"
+            android:title="@string/item_2"/>
+
+    <item
+            android:id="@+id/navigation_incidents"
+            android:icon="@drawable/ic_bottom_navigation_incident"
+            android:title="@string/item_3"/>
+
+    <!--<item
+            android:id="@+id/navigation_profile"
+            android:icon="@drawable/ic_bottom_navigation_account"
+            android:title="@string/item_4"/>-->
+
+    <item
+            android:id="@+id/navigation_others"
+            android:icon="@drawable/ic_bottom_navigation_others"
+            android:title="@string/item_5"/>
+
+</menu>

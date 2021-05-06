@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="0dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/row_item_size_margin_bottom"
+
+            android:layout_marginTop="@dimen/row_item_size_margin_bottom">
+
+            <ImageView
+                android:id="@+id/imgIconoEstado"
+                android:layout_width="@dimen/row_item_size_width_image"
+                android:layout_height="@dimen/row_item_size_heigth_image"
+                android:layout_marginRight="@dimen/row_item_size_margin_right_image"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_happy_item_invoice"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtMesRecibo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color_primary"
+                        android:text="@string/lbl_fecha_recibo"
+                        android:textSize="@dimen/row_item_name_text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/txtMontoTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:gravity="top"
+                        android:textColor="@color/text_color_primary"
+                        android:fontFamily="@string/font_family_medium"
+                        android:text="@string/lbl_monto_total"
+                        android:textSize="@dimen/row_item_name_text_size_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/txtTipoConsumo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_color_secondary"
+                            android:text="@string/lbl_tipo_cobro_consumo"
+                            android:textSize="@dimen/row_item_name_text_size_small" />
+
+                    <TextView
+                        android:id="@+id/txtEtiquetaFechaPago"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:gravity="top"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/text_color_secondary"
+                            android:fontFamily="@string/font_family_light"
+                            android:text="@string/lbl_fecha_pago"
+                            android:textSize="@dimen/row_item_name_text_size_small" />
+                    <TextView
+                            android:id="@+id/txtFechaPago"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:gravity="top"
+                            android:textColor="@color/text_color_secondary"
+                            android:fontFamily="@string/font_family_medium"
+                            android:text="@string/lbl_fecha_vencimiento"
+                            android:textSize="@dimen/row_item_name_text_size_small" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewSeparetor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_item_separador_size"
+            android:layout_marginLeft="24dp"
+            android:background="@color/color_line_Separador" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

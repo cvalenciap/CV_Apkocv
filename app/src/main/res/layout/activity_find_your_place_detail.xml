@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar_back" />
+
+    <LinearLayout
+        android:id="@+id/llContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.50">
+
+            <FrameLayout
+                android:id="@+id/frlContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.50"
+            android:orientation="vertical"
+            android:background="@color/fondo_seccion">
+
+            <LinearLayout
+                android:id="@+id/llName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_position_row" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNomRecaudador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@string/font_family_medium"
+                        android:textColor="@color/colorActivate"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txtDirRecaudador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@string/font_family_medium"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txtDistritoRecaudador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_family_light"
+                        android:textColor="@color/text_color_secondary"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btnComoLlegar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_yellow_background"
+                android:text="¿Como llegar?"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

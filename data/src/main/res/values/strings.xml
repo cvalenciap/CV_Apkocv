@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rest_message_error_connection">No tiene conexión a internet</string>
+    <string name="rest_message_error_data_request">Error al enviar los datos</string>
+    <string name="rest_message_error_data_response">Error al recibir los datos</string>
+    <string name="rest_message_error_failure">No es posible conectarse al servidor</string>
+    <string name="rest_message_error_failure_file">No se ha podido obtener el archivo. Inténtelo nuevamente.</string>
+    <string name="rest_message_error_save_file">No se ha podido guardar el archivo. Inténtelo nuevamente.</string>
+    <string name="bd_message_empty_data">No se ha encontrado datos</string>
+    <string name="session_not_user">El tiempo de sesión ha terminado</string>
+    <string name="ticket_box_retry_empty">Bandeja de tickets vacía</string>
+    <string name="rest_message_error_session_token">La sesión ha caducado</string>
+
+</resources>

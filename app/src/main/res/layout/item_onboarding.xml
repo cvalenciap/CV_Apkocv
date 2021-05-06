@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlBackgroundViewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imvBackgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@mipmap/fondo_onboarding" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_shadow" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="120dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/llContentItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="78dp"
+                android:layout_marginRight="78dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/imgIconoOnb"
+                    android:layout_width="186dp"
+                    android:layout_height="72dp"
+                    android:src="@mipmap/logo_sedapal" />
+
+                <TextView
+                    android:id="@+id/txtDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@string/font_family_regular"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="2sp"
+                    android:text="Podrás pagar tus recibos de manera rápida y segura."
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <include layout="@layout/progress_load_resource" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

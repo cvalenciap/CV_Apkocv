@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@mipmap/fondo_login"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo_sedapal"
+        android:layout_gravity="center"
+        android:layout_marginTop="97dp"
+        android:id="@+id/imgLogo"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@+id/imgLogo">
+
+        <RelativeLayout
+                android:id="@+id/rlParamLogueo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:id="@+id/llUserParams"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edtxtCorreo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@string/font_family_regular"
+                            android:singleLine="true"
+                            android:textSize="16sp"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:nextFocusForward="@+id/edtxtContrasenia"
+                            android:hint="@string/lbl_correo" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <EditText
+                        android:id="@+id/edtxtContrasenia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:fontFamily="@string/font_family_regular"
+                        android:inputType="textPassword"
+                        android:imeOptions="actionSend"
+                        android:textSize="16sp"
+                        android:hint="@string/lbl_contrasenia" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                        android:id="@+id/btnIniciarSesion"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/lbl_btn_iniciar_sesion"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@drawable/ripple_round_border_button"
+                />
+
+                <TextView
+                        android:id="@+id/txtOlvidasteContrasenia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="sans-serif"
+                        android:textSize="12sp"
+                        android:text="@string/txt_olvidaste_contrasenia"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/llRegistrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@string/font_family_light"
+                        android:text="@string/txt_no_tienes_cuenta"/>
+                <TextView
+                        android:id="@+id/txtRegistrate"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@string/font_family_medium"
+                        android:text="@string/txt_registrate"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_loading_white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

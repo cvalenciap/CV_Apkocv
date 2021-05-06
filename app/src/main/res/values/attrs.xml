@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MaterialSpinner">
+        <attr name="ms_baseColor" format="color" />
+        <attr name="ms_highlightColor" format="color" />
+        <attr name="ms_errorColor" format="color" />
+        <attr name="ms_error" format="string" />
+        <attr name="ms_hint" format="string" />
+        <attr name="ms_hintColor" format="color" />
+        <attr name="ms_hintTextSize" format="dimension" />
+        <attr name="ms_floatingLabelText" format="string" />
+        <attr name="ms_floatingLabelColor" format="color" />
+        <attr name="ms_multiline" format="boolean" />
+        <attr name="ms_nbErrorLines" format="integer" />
+        <attr name="ms_typeface" format="string" />
+        <attr name="ms_alignLabels" format="boolean" />
+        <attr name="ms_thickness" format="dimension" />
+        <attr name="ms_thickness_error" format="dimension" />
+        <attr name="ms_arrowSize" format="dimension" />
+        <attr name="ms_arrowColor" format="color" />
+        <attr name="ms_enableFloatingLabel" format="boolean" />
+        <attr name="ms_enableErrorLabel" format="boolean" />
+        <attr name="ms_alwaysShowFloatingLabel" format="boolean" />
+        <attr name="ms_isRtl" format="boolean" />
+        <attr name="ms_hintView" format="reference" />
+        <attr name="ms_dropDownHintView" format="reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SegmentedGroup">
+        <attr name="sc_corner_radius" format="dimension" />
+        <attr name="sc_border_width" format="dimension" />
+        <attr name="sc_tint_color" format="color" />
+        <attr name="sc_checked_text_color" format="color" />
+        <attr name="sc_unchecked_tint_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="AwesomeRadioButton">
+        <attr name="awesome_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PinEntryEditText">
+        <attr name="pinAnimationType" format="enum">
+            <enum name="popIn" value="0" />
+            <enum name="fromBottom" value="1" />
+            <enum name="none" value="-1" />
+        </attr>
+        <attr name="pinCharacterMask" format="string" />
+        <attr name="pinRepeatedHint" format="string" />
+        <attr name="pinLineStroke" format="dimension" />
+        <attr name="pinLineStrokeSelected" format="dimension" />
+        <attr name="pinCharacterSpacing" format="dimension" />
+        <attr name="pinTextBottomPadding" format="dimension" />
+        <attr name="pinLineColors" format="color" />
+        <attr name="pinBackgroundDrawable" format="reference" />
+        <attr name="pinBackgroundIsSquare" format="boolean" />
+    </declare-styleable>
+</resources>

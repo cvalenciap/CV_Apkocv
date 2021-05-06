@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llSearchFragment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:elevation="10dp"
+    android:layout_height="56dp"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+            <EditText
+                    android:id="@+id/edtxtTextSearch"
+                    android:hint="@string/lbl_hint_search"
+                    android:textSize="@dimen/row_item_name_text_size_medium"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="11dp"
+                    android:maxLines="1"
+                    android:imeOptions="actionSearch"
+                    android:inputType="number"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/imvSearch"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/ic_search"/>
+
+            <ImageView
+                    android:id="@+id/imvClearSearch"
+                    android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/ic_clear_toolbar" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.OlvContraSuministroActivity">
+
+    <include layout="@layout/view_toolbar_logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="32dp"
+                        android:layout_marginTop="24dp"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                    <ImageView android:layout_width="56dp"
+                               android:layout_height="56dp"
+                               android:layout_gravity="center_horizontal"
+                               android:src="@drawable/ic_recupera_contrasenia"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@string/font_family_medium"
+                            android:textColor="@color/text_color_primary"
+                            android:text="@string/lbl_olvide_contrasenia_suminsitro"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="@string/font_family_light"
+                            android:textColor="@color/text_color_secondary"
+                            android:text="@string/lbl_ingresa_recupera_contrasenia_suministro"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp">
+
+                    <EditText
+                        android:id="@+id/edtxtSuminsitro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:theme="@style/EditText_formulario"
+                        android:hint="@string/lbl_edtxt_suministro" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                    <pe.com.sedapal.ofivirtual.ui.widget.MaterialSpinner
+                            android:layout_marginTop="@dimen/registro_usuario_especio_items"
+                            android:id="@+id/spnTipoSolicitante"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:ms_arrowColor="@color/text_color_secondary"
+                            app:ms_arrowSize="16dp"
+                            app:ms_floatingLabelColor="@color/text_color_secondary"
+                            app:ms_floatingLabelText="@string/lbl_tipo_solicitante"
+                            app:ms_hint="@string/lbl_propietario"
+                            app:ms_multiline="true" />
+
+                    <pe.com.sedapal.ofivirtual.ui.widget.MaterialSpinner
+                            android:layout_marginTop="@dimen/registro_usuario_especio_items"
+                            android:id="@+id/spnPreguntaSecreta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:ms_arrowColor="@color/text_color_secondary"
+                            app:ms_arrowSize="16dp"
+                            app:ms_floatingLabelColor="@color/text_color_secondary"
+                            app:ms_floatingLabelText="@string/lbl_pregunta_secreta"
+                            app:ms_hint="@string/lbl_pregunta_secreta"
+                            app:ms_multiline="true" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp">
+
+                    <EditText
+                        android:id="@+id/edtxtRespuesta"
+                        android:imeOptions="actionSend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditText_formulario"
+                        android:hint="@string/lbl_edtxt_respuesta" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_marginBottom="16dp"
+                              android:orientation="vertical">
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    <Button
+                            android:id="@+id/btnEnviarRecuContra_suministro"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="24dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:text="@string/lbl_btn_enviar_contrasenia_suministro"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/button_blue_background"
+                    />
+
+                    <TextView
+                            android:id="@+id/txtVolverRecuContra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="normal"
+                            android:textColor="@color/colorActivate"
+                            android:lineSpacingExtra="8sp"
+                            android:layout_gravity="center"
+                            android:text="@string/lbl_volver_contrasenia_suministro"
+                    />
+
+                </LinearLayout>
+
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

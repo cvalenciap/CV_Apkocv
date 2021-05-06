@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/txtDescripcionConcepto"
+            android:layout_weight="0.7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_cargo_fijo"
+            android:textColor="@color/text_color_secondary"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/txtMontoConcepto"
+            android:layout_weight="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_monto_total_detalle"
+            android:textColor="@color/text_color_primary"
+            android:textSize="12sp"
+            android:gravity="right"
+            />
+    </LinearLayout>
+</LinearLayout>

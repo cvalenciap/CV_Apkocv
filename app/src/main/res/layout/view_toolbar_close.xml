@@ -1,0 +1,30 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--android:background="?attr/colorPrimary"-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_close"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@mipmap/background_toolbar"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_marginLeft="78dp"
+            android:layout_marginRight="78dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Titulo"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:theme="@style/TextToolbar"
+            android:id="@+id/toolbar_title" />
+
+
+</RelativeLayout>

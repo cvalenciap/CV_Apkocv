@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009ff6</color>
+    <color name="colorPrimaryDark">#006eaa</color>
+    <color name="colorAccent">#f1b300</color>
+    <color name="colorActivate">#009ff6</color>
+    <color name="colorDesactivate">#A8A8A8</color>
+
+
+    <!--Color de los controles-->
+    <color name="color_control_normal">#F0F0F0</color>
+    <color name="color_control_normal_2">#777777</color> <!--Cambio de color de el placeholder de los editText-->
+    <color name="color_control_highlight">#979797</color> <!--color del ripple de los botones-->
+    <color name="color_control_highlight_secondary">#6B6B6B</color> <!--color del ripple de los botones secundario-->
+    <color name="color_control_seconday">#A8A8A8</color>
+    <color name="colorButtonLight">#FFFFFF</color>
+
+    <!--Color de los textos-->
+    <color name="text_color_primary">#000000</color>
+    <color name="text_color_secondary">#8a000000</color>
+    <color name="text_color_link">#009ff6</color>
+
+    <!--Colores Material Spinner-->
+    <color name="fondo_color">@android:color/white</color>
+    <color name="disabled_color">#44000000</color>
+    <color name="error_color">#E7492E</color>
+    <color name="color_check_greeen">#41b321</color>
+    <color name="color_disable_control">#808080</color>
+
+    <!--Colores swipe refresh layout-->
+    <color name="colorPrimarySwipe">#009ff6</color>
+    <color name="colorSecondarySwipe">#f1b300</color>
+
+    <!--Regitro-->
+    <color name="fondo_seccion">#edf1f8</color>
+
+    <!--Suministros-->
+    <color name="color_fondo_box">#f1f2f6</color>
+    <color name="color_fondo_row">#FAFAFA</color>
+    <color name="color_line_Separador">#dbdfe5</color>
+    <color name="color_line_info_error">#FFCDC4</color>
+
+    <!--Segmented control color-->
+    <color name="radio_button_selected_color">@color/color_control_highlight</color>
+    <!--<color name="radio_button_selected_color">#ff33b5e5</color>-->
+    <color name="radio_button_unselected_color">#e0e0e0</color>
+
+    <!--TOAST COLORS-->
+    <color name="bg_mensaje_confirmacion_correcto">@color/colorPrimary</color>
+    <color name="bg_mensaje_confirmacion_incorrecto">#e51b1e</color>
+    <color name="btn_mensaje_confirmacion_correcto">#75f0f3f8</color>
+
+    <!--Color bars-->
+    <color name="color_bars_unselected">#e9ebed</color>
+    <color name="color_bar_selected">#009ff6</color>
+    <color name="color_grid">#8a000000</color>
+    <color name="color_white">#FFFFFF</color>
+
+    <!--Search View-->
+    <color name="colorTextoBuscador">#ffffff</color>
+    <color name="colorBackgroundSearchView">#fafafa</color>
+
+    <!--Colors Pin Entry-->
+    <color name="pin_normal">#FFFFFF</color>
+    <color name="holo_sky_blue">#009ff6</color>
+    <color name="holo_background_empty">#ffffff</color>
+    <color name="holo_background_box">#D2D2DB</color>
+    <color name="holo_background_box_checked">#FFFFFF</color>
+    <color name="holo_background_focused_false">#D2D2DB</color>
+
+</resources>

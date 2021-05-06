@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ui.fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_below="@+id/llSearchFragment"
+                android:id="@+id/llContenidoSuministro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <include layout="@layout/layout_supply_information"/>
+
+            <include layout="@layout/layout_supply_invoice"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/llProfileAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSearchFragment"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_search_number_supply"/>
+
+            <include layout="@layout/layout_search_number_supply_no_results"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/progress_load_screen_swipe"/>
+
+    </RelativeLayout>
+</FrameLayout>

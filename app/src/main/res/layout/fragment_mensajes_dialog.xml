@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/login_llCircleProgressBar"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/round_borders_dialog"
+              android:orientation="vertical">
+
+    <include layout="@layout/dialog_close"/>
+    <RelativeLayout
+        android:id="@+id/rlMostrarImagen"
+        android:layout_width="260dp"
+        android:layout_height="181dp">
+        <ImageView
+            android:id="@+id/imgMostrarImagenDialog"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="38dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include
+            layout="@layout/progress_load_resource"></include>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/llDialogContenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+            <ImageView
+                    android:id="@+id/imgIconDialog"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_error_dialog"/>
+            <TextView
+                    android:id="@+id/txtDialogTitulo"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="0sp"
+                    android:gravity="center_horizontal"
+                    android:text="Correo incorrecto"
+            />
+            <TextView
+                    android:id="@+id/txtDialogDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:textColor="@color/text_color_secondary"
+                    android:lineSpacingExtra="2sp"
+                    android:gravity="center_horizontal"
+                    android:text="Descripcion"
+            />
+            <TextView
+                    android:id="@+id/txtDialogOpcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorActivate"
+                    android:lineSpacingExtra="8sp"
+                    android:gravity="center_horizontal"
+                    android:text="Intentar de nuevo"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/llRegistrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <Button
+                    android:id="@+id/btnDialogRegistrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/lbl_btn_dialog_registrate"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_blue_background"
+            />
+            <TextView
+                    android:id="@+id/txtDialogIntentarNuevamente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorActivate"
+                    android:lineSpacingExtra="8sp"
+                    android:gravity="center_horizontal"
+                    android:text="Intentar de nuevo"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

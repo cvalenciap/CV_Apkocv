@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="CustomThemeVisa" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

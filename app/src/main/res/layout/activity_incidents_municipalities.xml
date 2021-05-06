@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/fondo_seccion"
+    tools:context=".ui.activity.GraphicsActivity">
+
+    <include layout="@layout/view_toolbar_back"/>
+
+    <LinearLayout
+        android:layout_below="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/progress_load_resource"/>
+        <include layout="@layout/error_load_resource_swipe"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlContentPendingInvoice"
+        android:layout_below="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rcvIncidentsMunicipalities" />
+    </RelativeLayout>
+
+</RelativeLayout>

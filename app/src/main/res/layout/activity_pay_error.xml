@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".ui.activity.PaySuccessActivity">
+    <include layout="@layout/view_toolbar_close_not_background"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+        <LinearLayout
+            android:layout_above="@+id/btnRegresar"
+            android:id="@+id/llResultPagoOk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtTittle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_lo_sentimos"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@string/font_family_regular"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imvIcono"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/txtTittle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/ic_error_min_resource"/>
+
+            <TextView
+                android:id="@+id/txtDescripcionPago"
+                android:layout_below="@+id/imvIcono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@string/font_family_light"
+                android:textStyle="normal"
+                android:textColor="@color/text_color_secondary"
+                android:gravity="center"
+                android:layout_marginTop="28dp"
+                android:text="@string/lbl_descripcion_error"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="Regresar"
+            android:textColor="@android:color/white"
+            android:background="@drawable/ripple_round_border_button_blue"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/login_llCircleProgressBar"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/round_borders_dialog"
+              android:orientation="vertical">
+
+    <include layout="@layout/dialog_close"/>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/llCalendario"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+    >
+        <DatePicker
+                android:id="@+id/dpSeleccionaFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true"
+                android:layout_gravity="center_horizontal"
+        />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/txtSeleccionar"
+            android:layout_below="@id/llCalendario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="12sp"
+            android:fontFamily="@string/font_family_regular"
+            android:textColor="@color/text_color_link"
+            android:lineSpacingExtra="8sp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/lbl_seleccionar"
+    />
+
+
+</LinearLayout>
